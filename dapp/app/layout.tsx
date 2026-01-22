@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { Navbar } from '@/components/shared/Navbar'
+import { ClientDebugBalances } from '@/components/shared/ClientDebugBalances'
 
 export const metadata: Metadata = {
   title: 'E-Commerce Blockchain DAPP',
@@ -20,6 +21,7 @@ export default function RootLayout({
           <div className="min-h-screen bg-gray-50">
             <Navbar />
             {children}
+            <ClientDebugBalances />
           </div>
         </Providers>
       </body>
